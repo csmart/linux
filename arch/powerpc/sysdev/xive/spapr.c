@@ -723,7 +723,7 @@ static bool xive_get_max_prio(u8 *max_prio)
 	return true;
 }
 
-static const u8 *get_vec5_feature(unsigned int index)
+static const u8 __init *get_vec5_feature(unsigned int index)
 {
 	unsigned long root, chosen;
 	int size;
